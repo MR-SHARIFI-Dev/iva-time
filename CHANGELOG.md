@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.0.0] - 2026-08-26
+
+### Added · افزوده شده
+
+- انیمیشن حرکت نرم برای نوار تیکر (marquee) بالای صفحه با تکرار بی‌نقص
+- توقف انیمیشن مارکیو روی هاور و احترام به `prefers-reduced-motion`
+
+### Fixed · اصلاح شده (تم روش / Light theme)
+
+- دکمه‌های اکشن (مدیریت شهرها، مقایسه، برنامه‌ریز، پیش‌فرض/مرتب‌سازی، اشتراک تنظیمات) که در تم روش پس‌زمینه تیره و متن نامرئی داشتند
+- پس‌زمینه نوار مارکیو که در تم روش تیره می‌ماند
+- رنگ‌بندی About section (پس‌زمینه، متن، عنوان‌ها) در تم روش
+- کارت‌های ساعت در تم روش (حاشیه، سایه، حالت هاور)
+- سلول‌های تقویم و برجسته‌سازی امروز در تم روش
+- پنل‌های ابزار (compare/planner)، پلنر نتایج و لیست شهرها در تم روش
+- دیالوگ مدیریت شهرها (پس‌زمینه، backdrop، دکمه‌ها) در تم روش
+- دکمه‌های ناوبری تقویم (ماه قبل/بعد)، sync bar، select ها و toast در تم روش
+- هدر (دکمه‌های تم/زبان/نصب، backdrop و لینک‌های ناوبری) در تم روش
+- بهبود کنتراست رنگ‌های تأکیدی (gold/cyan/violet) برای خوانایی در تم روش
+- فیلترهای جست‌وجو (دکمه‌های منطقه) و دکمه «نمایش بیشتر» در تم روش
+- بامپ cache نسخه به v7 برای بارگذاری فایل‌های جدید در مرورگر
+
+---
+
 ## [4.1.0] - 2026-08-26
 
 ### Redesigned · بازطراحی
@@ -55,7 +79,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Persian numerals display
   - Today highlight with orange border
   - Cross-date display (shows equivalent in other calendar)
-  
+
 - ✅ **NTP Time Synchronization** - همگام‌سازی زمان NTP
   - Cloudflare edge time source
   - WorldTimeAPI fallback
@@ -64,7 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Live status bar (source, RTT, offset)
   - Auto re-sync every 5 minutes
   - Manual sync button
-  
+
 - ✅ **Enhanced World Clocks** - ساعت‌های جهان بهبودیافته
   - 38 cities across 6 regions
   - Day/night indicator
@@ -72,13 +96,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Search functionality
   - Regional filters (Americas, Europe, Middle East, Africa, Asia Pacific)
   - "Show more" pagination
-  
+
 - ✅ **Bilingual Support** - پشتیبانی دو زبانه
   - Complete Persian (RTL) translations
   - Complete English (LTR) translations
   - Persian numerals (۰۱۲۳۴۵۶۷۸۹)
   - True RTL layout with Vazirmatn font
-  
+
 - ✅ **Professional Documentation** - مستندات حرفه‌ای
   - Comprehensive bilingual README
   - 13-page Wiki documentation
@@ -94,12 +118,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Improved card design
   - Better typography hierarchy
   - Enhanced calendar panel
-  
+
 - 📱 **Improved Responsiveness** - واکنش‌گرایی بهبودیافته
   - Better mobile layouts
   - Optimized breakpoints
   - Touch-friendly controls
-  
+
 - ⚡ **Performance** - عملکرد
   - Optimized render loop
   - Reduced DOM updates
@@ -141,10 +165,10 @@ MAJOR.MINOR.PATCH
 
 ### Version History · تاریخچه نسخه‌ها
 
-| Version | Date | Jalali Year | Status |
-|---------|------|-------------|--------|
-| 2.0.0 | 2025 | ۱۴۰۴ | 🎉 Current |
-| 1.0.0 | 2024 | ۱۴۰۳ | ⚠️ Deprecated |
+| Version | Date | Jalali Year | Status        |
+| ------- | ---- | ----------- | ------------- |
+| 2.0.0   | 2025 | ۱۴۰۴        | 🎉 Current    |
+| 1.0.0   | 2024 | ۱۴۰۳        | ⚠️ Deprecated |
 
 ---
 
@@ -164,6 +188,7 @@ MAJOR.MINOR.PATCH
 Found a bug? Please report it using our [Bug Report Template](./.github/ISSUE_TEMPLATE/bug_report.yml).
 
 Please include:
+
 - Browser name and version
 - Device type (mobile/desktop)
 - Operating system
